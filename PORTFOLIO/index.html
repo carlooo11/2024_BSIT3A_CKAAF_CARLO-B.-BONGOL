@@ -8,9 +8,11 @@
 
     <!-- Linking External CSS -->
     <link rel="stylesheet" href="style.css"/>
+    
     <!-- Unicons Link -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
+
 <body>
     <header class="header">
         <a href="#" class="logo">{cb}</a>
@@ -18,7 +20,7 @@
             <a href="#" class="active" style="--i:1">Home</a>
             <a href="#about" style="--i:2">About</a> 
             <a href="#education" style="--i:3">Education</a>
-            <a href="#" style="--i:4">Contact</a>
+            <a href="#contact" style="--i:4">Contact</a>
         </nav>
     </header>
     <!-- Hero Section -->
@@ -92,7 +94,6 @@
                     </P>
                 </div>
 
-
                 <div class="education-box">
                     <!--Icon link-->
                     <i class="uil uil-graduation-cap"></i>
@@ -102,7 +103,6 @@
                        2017-2021
                     </P>
                 </div>
-
 
                 <div class="education-box">
                     <!--Icon link-->
@@ -114,14 +114,59 @@
                     </P>
                 </div>
 
+                    <!-- Contact Section -->
+            <section class="contact" id="contact">
+                <div class="contact-container">
+                    <h2 class="heading">Contact Me</h2>
 
+                    <!-- Contact Form -->
+                    <form action="#" method="POST" class="contact-form">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
 
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
 
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Back to Top Button -->
+            <button id="back-to-top" title="Go to top">&#8679;</button>
 
                 </div>
         </section>
          <!--js link-->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src= "script.js"></script>
+      
+        <script>
+            // Get the button
+            var mybutton = document.getElementById("back-to-top");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            mybutton.addEventListener("click", function() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            });
+        </script>
+
     </body>
 </html>

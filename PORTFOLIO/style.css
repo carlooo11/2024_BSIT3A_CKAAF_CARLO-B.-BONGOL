@@ -359,9 +359,8 @@ strong {
 
 /* ======= Education ========= */
 .education {
-    padding: 25px 10%;
+    padding: 60px 10%;
     height: 100vh;
-    margin-top: 40px;
 }
 
 .education-container {
@@ -370,12 +369,14 @@ strong {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .education h2 {
     text-align: center;
+    margin: -20px;
 }
+
 
 .education-container .education-box {
     flex: 1 1 20rem;
@@ -386,17 +387,18 @@ strong {
     text-align: center;
     transition: .5 ease;
     border:0.2rem solid #1f242d;
+    margin-top: 70px;
 }
 
 .education-box i {
-    font-size: 3rem;
+    font-size: 5rem;
     color:#1f242d;
     border: none;
 }
 
 
 .education-box h3{
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .education-box p{
@@ -408,3 +410,88 @@ strong {
     border-color: #ffffff;
     transform: scale(1);
 }
+
+
+
+/* ======= Contact Section ========= */
+.contact {
+    padding: 60px 10%;
+    background-color: #1f242d;
+    color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 45px;
+    color: #f7C232;
+    margin-top: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #f7C232;
+    color: #1f242d;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #f7C232;
+}
+
+
+/* ======= Back to Top Button ========= */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f7C232;
+    color: #1f242d;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color:  #f7C232;
+}
+
