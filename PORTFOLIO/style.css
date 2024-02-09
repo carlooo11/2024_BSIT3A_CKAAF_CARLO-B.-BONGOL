@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -26,7 +27,7 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 27px;
+    font-size: 22px;
     cursor: default;
     animation: sideLeft 1s ease forwards;
     opacity: 0;
@@ -39,7 +40,7 @@ body{
     color: #fff;
     padding: 0px 16px;
     font-weight: 600;
-    transition: 0.2s all;
+    transition: 0.3s all;
     animation: naVmenu 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
     opacity: 0;
@@ -75,8 +76,20 @@ body{
 
 
 img {
-    max-width: 100%;
     height: auto;
+    width: 350px;
+    margin-left: 20px;
+    margin-bottom: 70px;
+    border: none;
+    border-radius: 300px;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+
+.info-side p {
+    margin-top: 20px;
 }
 
 
@@ -126,14 +139,14 @@ p{
     width: 450px;
 }
 
+
 i{
     position: relative;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     padding: 10px;
     border-radius: 30%;
-    color: #fff;
+    color: #ffffff;
     margin: 0px 8px;
-    margin-top: -10px;
     transition: 0.3s ;
     animation: socialIcons 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
@@ -148,14 +161,13 @@ i:hover{
 
 button{
     background-color:  #f7C232;
-    margin-top: 50px;
     padding: 20px 50px;
     border: none;
-    border-radius: 30px;
+    border-radius: 40px;
     cursor: pointer;
     font-weight: 600;
     transition: .3s;
-    box-shadow: 0 0 15px #f7C232;
+    box-shadow: none; 
     animation: slideUp 1s ease forwards;
     animation-delay: 1.5s;
     opacity: 0;
@@ -163,7 +175,7 @@ button{
 
 
 button:hover{
-    box-shadow: none;
+    box-shadow: 0 0 15px #f7C232;
 }
 
 /*========= animations hehe ===========*/
@@ -182,11 +194,11 @@ button:hover{
 
  @keyframes naVmenu {
     0% {
-    transform: translateX(-100px);
+    transform: translateY(100px);
     opacity: 0;
  }
  100% {
-    transform: translateX(0); 
+    transform: translateY(0); 
     opacity: 1;
     }
  }
@@ -260,4 +272,139 @@ button:hover{
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(1);
+        opacity: 1;
+    }
+}
+
+/* ======= About Me ========= */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 25px 10%;
+    margin: 20px 10px;
+    margin-top: 70px;
+    height: 100vh;
+}
+
+
+.about-img img {
+    width: 30vw;
+    margin-top: 150px;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 45px;
+    color:  #f7C232;
+}
+
+
+.about-content h3 {
+    font-size: 1.6rem;
+}
+
+.about-content p {
+    line-height: 27px;
+    margin: 2rem 0 2rem;
+}
+
+/* ======= Contacts Row ========= */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bi-chevron-right {
+    margin-right: 5px;
+}
+
+
+strong {
+    margin-right: 5px;
+}
+
+/* ======= Contacts Row Alignment ========= */
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    color: #f7C232;
+}
+
+
+
+/* ======= Education ========= */
+.education {
+    padding: 25px 10%;
+    height: 100vh;
+    margin-top: 40px;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 100px;
+}
+
+.education h2 {
+    text-align: center;
+}
+
+.education-container .education-box {
+    flex: 1 1 20rem;
+    margin-top: 30px;
+    background-color: #f7C232;
+    padding: 2rem 1rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: .5 ease;
+    border:0.2rem solid #1f242d;
+}
+
+.education-box i {
+    font-size: 3rem;
+    color:#1f242d;
+    border: none;
+}
+
+
+.education-box h3{
+    font-size: 1.2rem;
+}
+
+.education-box p{
+        margin: 1rem 0 2rem;
+        color: #000000;
+}
+
+.education-container .education-box:hover{
+    border-color: #ffffff;
+    transform: scale(1);
 }

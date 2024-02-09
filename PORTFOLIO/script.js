@@ -5,3 +5,8 @@ let type = new Typed('#changing-text' , {
     loop: true,
 
 });
+
+
+
+
+

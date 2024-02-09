@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
+
     <!-- Linking External CSS -->
     <link rel="stylesheet" href="style.css"/>
     <!-- Unicons Link -->
@@ -15,39 +16,112 @@
         <a href="#" class="logo">{cb}</a>
         <nav class="navbar">
             <a href="#" class="active" style="--i:1">Home</a>
-            <a href="#" style="--i:2">About</a> 
-            <a href="#" style="--i:3">Portfolio</a>
+            <a href="#about" style="--i:2">About</a> 
+            <a href="#education" style="--i:3">Education</a>
             <a href="#" style="--i:4">Contact</a>
         </nav>
     </header>
-    
     <!-- Hero Section -->
     <div class="hero-container">
         <div class="info-side">
-            <h3 class="part-1">Hello, IT's me</h3>
+            <h3 class="part-1">Hello, IT's me!</h3>
             <h1>Carlo Bongol</h1>
             <h3 class="part-2">I'm a <span id="changing-text">BSIT Student </span></h3>
             <p>
-               Hey! Welcome to my portfolio! I'm just a student excited to show you what I've been working on. 
-               Take  look around at my porfolio its one of the task that it given to us by our instructor and i had fun doing it.
-               It might not be super fancy, but it represents a bit of my journey in web development. Whether you're a fellow student or just curious, thanks for checking it out!
+                Hey! Welcome to my portfolio! I'm just a student excited to show you what I've been working on. Take look around at my portfolio, it’s one of the task that it given to us by our instructor and I had fun doing it. 
+                It might not be super fancy, but it represents a bit of my journey in web development. Whether you're a fellow student or just curious, thanks for checking it out!
             </p>
             <!-- Social Media Icons-->
             <a href="#"><i class="uil uil-facebook-f" style="--i:5"></i></a>
             <a href="#"><i class="uil uil-instagram"  style="--i:6"></i></a>
             <a href="#"><i class="uil uil-github" style="--i:7"></i></a>
             <button class="btn">Download CV</button>
-
         </div>
-        
+        <!-- Image -->
         <div class="image-side">
-            <img src="images/No User Icon.png" alt="My Pic" class="resize-image"/>
+            <img src="images/me.png" alt="My Pic" class="resize-image"/>
         </div>
     </div>
 
-    <!--js link-->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src= "script.js"></script>
+        <!-- About Me -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.jpg" alt="My Pic"/>
+        </div>
 
-</body>
+        <div class="about-content">
+            <h2 class="heading"> About <span> Me </span></h2>
+            <h3>BSIT Student</h3>
+            <p>
+                Hi, I'm Carlo B. Bongol from Muladbucad Grande Guinobatan Albay. I am currently in my third year pursuing a Bachelor of Science in Information Technology (BSIT)
+                degree in Bicol University Polangui. I am enthusiastically absorbing new knowledge, and delving into the intricacies of emerging technologies. As I continue
+                to learn and grow, I look forward to applying these insights to real-world IT scenarios in the near future. 
+            </p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul>
+                        <li><i class="bi bi-chevron-right"> </i> <strong> Birthday: </strong> <span> October 11, 2002 </span></li>
+                        <li><i class="bi bi-chevron-right"> </i> <strong> Gender: </strong> <span> Male </span></li>
+                        <li><i class="bi bi-chevron-right"> </i> <strong> Age: </strong> <span> 21 </span></li>
+                        <li><i class="bi bi-chevron-right"> </i> <strong> City: </strong> <span> Guinobatan, Albay</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <strong> Phone: </strong> <span> (+63)915676791</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong> Degree: </strong> <span> BSIT </span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong> Email: </strong> <span> carlobongol311@gmail.com</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong> Status: </strong> <span> Single</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="education" id="education">
+            <h2 class="heading">Education</h2>
+                <div class="education-container">
+                <div class="education-box">
+                    <!--Icon link-->
+                    <i class="uil uil-graduation-cap"></i>
+                    <h3>Primary</h3>
+                    <P>
+                       Highway Hills Integrated School
+                       Canaman Central School
+                       2009-2015
+                    </P>
+                </div>
+
+
+                <div class="education-box">
+                    <!--Icon link-->
+                    <i class="uil uil-graduation-cap"></i>
+                    <h3>Secondary</h3>
+                    <P>
+                       Masarawag National High School
+                       2017-2021
+                    </P>
+                </div>
+
+
+                <div class="education-box">
+                    <!--Icon link-->
+                    <i class="uil uil-graduation-cap"></i>
+                    <h3>Tertiary</h3>
+                    <P>
+                       Bicol University Polangui
+                       2021-2025
+                    </P>
+                </div>
+
+
+
+
+
+                </div>
+        </section>
+         <!--js link-->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src= "script.js"></script>
+    </body>
 </html>
