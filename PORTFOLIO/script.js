@@ -7,6 +7,3 @@ let type = new Typed('#changing-text' , {
 });
 
 
-
-
-
