@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ckaaf</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .log-notif{
+            background-color: rgb(255, 223, 209);
+            width: 500px;
+            height: auto;
+            padding: 6rem;
+            margin: 0 auto;
+            margin-top: 10%;
+            border-radius: 30px;
+            border: 2px solid rgb(255, 144, 144);
+        }
+        .log-notif-btn{
+            background-color: rgb(221, 107, 75);
+            padding: 0.8rem;
+            border-radius:8px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .log-notif-btn:hover{
+            background-color: rgb(209, 130, 109);
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="../img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="my_shop.php">View Shop</a></li>
+                <li><a href="index.php">Dashboard</a></li>
+                <li><a href="inventory.php">Inventory</a></li>
+                <li><a href="orders.php">Orders</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn"><img src="../img/people/uicon.jpeg" class="uicon" alt=""></button>
+                    <div class="dropdown-content">
+                      <a href="../request/logout.php">Logout</a>
+                    </div>
+                </div>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.php"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section class="log-notif">
+        <h4>Not Logged in as a Client!</h4>
+        <p>You are currently logged in as an admin. Logout and login as a client to proceed?</p>
+
+        <a href="my_shop.php" class="log-notif-btn">Cancel</a>
+        <a href="../login.php" class="log-notif-btn">Proceed</a>
+    </section>
+</body>
+</html>
